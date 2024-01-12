@@ -11,6 +11,12 @@
 		E984A70E2B49AA99007A8166 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E984A70D2B49AA99007A8166 /* ContentView.swift */; };
 		E984A7102B49AA9B007A8166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E984A70F2B49AA9B007A8166 /* Assets.xcassets */; };
 		E984A7132B49AA9B007A8166 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E984A7122B49AA9B007A8166 /* Preview Assets.xcassets */; };
+		E984A71C2B49AB02007A8166 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E984A71B2B49AB02007A8166 /* MainView.swift */; };
+		E984A71E2B49AB10007A8166 /* AddPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E984A71D2B49AB10007A8166 /* AddPicker.swift */; };
+		E984A7202B49AB1C007A8166 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E984A71F2B49AB1C007A8166 /* AccountView.swift */; };
+		E984A7252B49C8EC007A8166 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E984A7242B49C8EC007A8166 /* Person.swift */; };
+		E9A341122B4AF58400A7118F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A341112B4AF58400A7118F /* Login.swift */; };
+		E9BFC6DA2B4C3CA4003A0D76 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC6D92B4C3CA4003A0D76 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		E984A70D2B49AA99007A8166 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E984A70F2B49AA9B007A8166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E984A7122B49AA9B007A8166 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E984A71B2B49AB02007A8166 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E984A71D2B49AB10007A8166 /* AddPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPicker.swift; sourceTree = "<group>"; };
+		E984A71F2B49AB1C007A8166 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		E984A7242B49C8EC007A8166 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E9A341112B4AF58400A7118F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E9BFC6D92B4C3CA4003A0D76 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,9 @@
 		E984A70A2B49AA99007A8166 /* PickerLibrary2 */ = {
 			isa = PBXGroup;
 			children = (
-				E984A70B2B49AA99007A8166 /* PickerLibrary2App.swift */,
-				E984A70D2B49AA99007A8166 /* ContentView.swift */,
+				E984A7232B49C2CD007A8166 /* Model */,
+				E984A71A2B49AAF2007A8166 /* App */,
+				E984A7192B49AAE3007A8166 /* View */,
 				E984A70F2B49AA9B007A8166 /* Assets.xcassets */,
 				E984A7112B49AA9B007A8166 /* Preview Content */,
 			);
@@ -65,6 +78,35 @@
 				E984A7122B49AA9B007A8166 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E984A7192B49AAE3007A8166 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E984A70D2B49AA99007A8166 /* ContentView.swift */,
+				E984A71B2B49AB02007A8166 /* MainView.swift */,
+				E984A71D2B49AB10007A8166 /* AddPicker.swift */,
+				E984A71F2B49AB1C007A8166 /* AccountView.swift */,
+				E9A341112B4AF58400A7118F /* Login.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E984A71A2B49AAF2007A8166 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E984A70B2B49AA99007A8166 /* PickerLibrary2App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E984A7232B49C2CD007A8166 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E984A7242B49C8EC007A8166 /* Person.swift */,
+				E9BFC6D92B4C3CA4003A0D76 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +135,7 @@
 		E984A7002B49AA99007A8166 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
@@ -104,10 +146,11 @@
 			};
 			buildConfigurationList = E984A7032B49AA99007A8166 /* Build configuration list for PBXProject "PickerLibrary2" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = tr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				tr,
 				Base,
 			);
 			mainGroup = E984A6FF2B49AA99007A8166;
@@ -137,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A341122B4AF58400A7118F /* Login.swift in Sources */,
 				E984A70E2B49AA99007A8166 /* ContentView.swift in Sources */,
+				E984A71E2B49AB10007A8166 /* AddPicker.swift in Sources */,
+				E9BFC6DA2B4C3CA4003A0D76 /* Post.swift in Sources */,
+				E984A71C2B49AB02007A8166 /* MainView.swift in Sources */,
+				E984A7252B49C8EC007A8166 /* Person.swift in Sources */,
 				E984A70C2B49AA99007A8166 /* PickerLibrary2App.swift in Sources */,
+				E984A7202B49AB1C007A8166 /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
